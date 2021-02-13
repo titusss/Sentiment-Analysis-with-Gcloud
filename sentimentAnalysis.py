@@ -13,6 +13,9 @@ import pandas as pd
 
 from google.cloud import language_v1
 
+from datetime import datetime
+
+
 def print_result(annotations):
     score = annotations.document_sentiment.score
     magnitude = annotations.document_sentiment.magnitude
@@ -30,7 +33,8 @@ def print_result(annotations):
         "Overall Sentiment: score of {} with magnitude of {}".format(score, magnitude)
     )
     print(df)
-    df.to_csv('dataframe.csv')
+    df.to_csv('results_' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.csv')
+    print('The results have been saved as: ' + 'results_' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.csv')
     return 0
 
 def analyze(movie_review_filename):
