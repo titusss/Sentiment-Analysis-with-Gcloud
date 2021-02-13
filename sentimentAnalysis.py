@@ -15,6 +15,7 @@ from google.cloud import language_v1
 
 from datetime import datetime
 
+from pytube import YouTube
 
 def print_result(annotations):
     score = annotations.document_sentiment.score
@@ -52,14 +53,27 @@ def analyze(movie_review_filename):
     # Print the results
     print_result(annotations)
 
+def downloadSubtitles(youtube_url):
+    """Download YouTube subtitles."""
+    try:
+        print('Downloading subtitles for: ' + youtube_url)
+        source = YouTube(youtube_url)
+        en_caption = source.captions.get_by_language_code('en')
+        print("Succesfully downloaded subtitles for YouTube video: '" + source.title + "'")
+        en_caption_convert_to_srt =(en_caption.generate_srt_captions())
+        return en_caption_convert_to_srt
+    except:
+        import sys
+        sys.exit("The entered YouTube URL seems to be invalid. Make sure that you used quotation marks and that english subtitles are present. Example: python3 sentimentAnalysis.py 'https://www.youtube.com/watch?v=arj7oStGLkU'")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument(
-        "movie_review_filename",
-        help="The filename of the movie review you'd like to analyze.",
+        "youtube_url",
+        help="The URL in quotation marks to a YouTube video with english subtitles. Example: 'https://www.youtube.com/watch?v=arj7oStGLkU'",
     )
     args = parser.parse_args()
-
-    analyze(args.movie_review_filename)
+    subtitles = downloadSubtitles(args.youtube_url)
+    analyze(subtitles)
