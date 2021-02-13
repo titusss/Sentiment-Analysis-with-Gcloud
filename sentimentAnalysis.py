@@ -17,7 +17,7 @@ from datetime import datetime
 
 from pytube import YouTube
 
-def print_result(annotations):
+def print_result(annotations, video_title, filename):
     score = annotations.document_sentiment.score
     magnitude = annotations.document_sentiment.magnitude
     results = {}
@@ -33,38 +33,49 @@ def print_result(annotations):
     print(
         "Overall Sentiment: score of {} with magnitude of {}".format(score, magnitude)
     )
+    print('Sentiment analysis finished. Here is your dataframe: ')
     print(df)
-    df.to_csv('results_' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.csv')
-    print('The results have been saved as: ' + 'results_' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p") + '.csv')
+    df.to_csv('sentiment_' + filename + '.csv')
+    print('The sentiment analysis results have been saved as: ' + 'sentiment_' + filename + '.csv')
     return 0
 
-def analyze(movie_review_filename):
+def analyze(subtitles, video_title, filename):
     """Run a sentiment analysis request on text within a passed filename."""
+    print('Starting sentiment analysis on Gcloud Natural Language API')
     client = language_v1.LanguageServiceClient()
 
-    with open(movie_review_filename, "r") as review_file:
-        # Instantiates a plain text document.
-        content = review_file.read()
-    # Remove new lines
-    content = content.replace('\n', ' ').replace('\r', '').replace('  ', ' ')
-    document = language_v1.Document(content=content, type_=language_v1.Document.Type.PLAIN_TEXT)
+    document = language_v1.Document(content=subtitles, type_=language_v1.Document.Type.PLAIN_TEXT)
     annotations = client.analyze_sentiment(request={'document': document})
 
     # Print the results
-    print_result(annotations)
+    print_result(annotations, video_title, filename)
 
 def downloadSubtitles(youtube_url):
     """Download YouTube subtitles."""
     try:
         print('Downloading subtitles for: ' + youtube_url)
         source = YouTube(youtube_url)
-        en_caption = source.captions.get_by_language_code('en')
+        en_caption = source.captions["en"]
         print("Succesfully downloaded subtitles for YouTube video: '" + source.title + "'")
-        en_caption_convert_to_srt =(en_caption.generate_srt_captions())
-        return en_caption_convert_to_srt
+        video_title = source.title.replace(" ", "_")
+        caption = cleanCaption(en_caption.generate_srt_captions())
+        filename = video_title + '_' + datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
+        text_file = open("transcript_" + filename + '.txt', "w")
+        text_file.write(caption)
+        text_file.close()
+        print("The transcript file has been successfully saved as: transcript_" + filename + '.txt')
+        return caption, video_title, filename
     except:
         import sys
         sys.exit("The entered YouTube URL seems to be invalid. Make sure that you used quotation marks and that english subtitles are present. Example: python3 sentimentAnalysis.py 'https://www.youtube.com/watch?v=arj7oStGLkU'")
+
+def cleanCaption(caption):
+    caption_lines = caption.splitlines()
+    cleaned_caption_list = caption_lines[2::4]
+    caption_paragraph = ""
+    for line in cleaned_caption_list:
+        caption_paragraph += ' ' + line
+    return caption_paragraph
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -75,5 +86,5 @@ if __name__ == "__main__":
         help="The URL in quotation marks to a YouTube video with english subtitles. Example: 'https://www.youtube.com/watch?v=arj7oStGLkU'",
     )
     args = parser.parse_args()
-    subtitles = downloadSubtitles(args.youtube_url)
-    analyze(subtitles)
+    subtitles, video_title, filename = downloadSubtitles(args.youtube_url)
+    analyze(subtitles, video_title, filename)
