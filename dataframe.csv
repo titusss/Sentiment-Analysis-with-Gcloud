@@ -1,0 +1,93 @@
+,sentence,score,magnitude,overall sentiment
+0,"When I was a kid, the disaster we worried about most was a nuclear war.",-0.5,0.5,-0.5
+1,"Thats why we had a barrel like this down in our basement, filled with cans of food and water.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+2,"When the nuclear attack came, we were supposed to go downstairs, hunker down, and eat out of that barrel.",-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+3,Today the greatest risk of global catastrophe doesnt look like this.,-0.699999988079071,0.699999988079071,-0.699999988079071
+4,"Instead, it looks like this.",-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+5,"If anything kills over 10 million people in the next few decades, its most likely to be a highly infectious virus rather than a war.",-0.699999988079071,0.699999988079071,-0.699999988079071
+6,"Not missiles, but microbes.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+7,"Now, part of the reason for this is that weve invested a huge amount in nuclear deterrents.",-0.5,0.5,-0.5
+8,But weve actually invested very little in a system to stop an epidemic.,-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+9,Were not ready for the next epidemic.,-0.800000011920929,0.800000011920929,-0.800000011920929
+10,Lets look at Ebola.,-0.10000000149011612,0.10000000149011612,-0.10000000149011612
+11,"Im sure all of you read about it in the newspaper, lots of tough challenges.",0.10000000149011612,0.10000000149011612,0.10000000149011612
+12,I followed it carefully through the case analysis tools we use to track polio eradication.,0.30000001192092896,0.30000001192092896,0.30000001192092896
+13,"And as you look at what went on, the problem wasnt that there was a system that didnt work well enough, the problem was that we didnt have a system at all.",-0.800000011920929,0.800000011920929,-0.800000011920929
+14,"In fact, theres some pretty obvious key missing pieces.",-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+15,"We didnt have a group of epidemiologists ready to go, who would have gone, seen what the disease was, seen how far it had spread.",-0.10000000149011612,0.10000000149011612,-0.10000000149011612
+16,The case reports came in on paper.,-0.20000000298023224,0.20000000298023224,-0.20000000298023224
+17,It was very delayed before they were put online and they were extremely inaccurate.,-0.800000011920929,0.800000011920929,-0.800000011920929
+18,We didnt have a medical team ready to go.,-0.699999988079071,0.699999988079071,-0.699999988079071
+19,We didnt have a way of preparing people.,-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+20,"Now, Médecins Sans Frontières did a great job orchestrating volunteers.",0.8999999761581421,0.8999999761581421,0.8999999761581421
+21,"But even so, we were far slower than we should have been getting the thousands of workers into these countries.",-0.8999999761581421,0.8999999761581421,-0.8999999761581421
+22,And a large epidemic would require us to have hundreds of thousands of workers.,-0.699999988079071,0.699999988079071,-0.699999988079071
+23,There was no one there to look at treatment approaches.,-0.800000011920929,0.800000011920929,-0.800000011920929
+24,No one to look at the diagnostics.,-0.800000011920929,0.800000011920929,-0.800000011920929
+25,No one to figure out what tools should be used.,-0.699999988079071,0.699999988079071,-0.699999988079071
+26,"As an example, we could have taken the blood of survivors, processed it, and put that plasma back in people to protect them.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+27,But that was never tried.,-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+28,So there was a lot that was missing.,-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+29,And these things are really a global failure.,-0.800000011920929,0.800000011920929,-0.800000011920929
+30,"The WHO is funded to monitor epidemics, but not to do these things I talked about.",-0.5,0.5,-0.5
+31,"Now, in the movies its quite different.",0.0,0.0,0.0
+32,"Theres a group of handsome epidemiologists ready to go, they move in, they save the day, but thats just pure Hollywood.",0.20000000298023224,0.20000000298023224,0.20000000298023224
+33,The failure to prepare could allow the next epidemic to be dramatically more devastating than Ebola Lets look at the progression of Ebola over this year.,-0.800000011920929,0.800000011920929,-0.800000011920929
+34,"About 10,000 people died,  and nearly all were in the three West African countries.",-0.5,0.5,-0.5
+35,Theres three reasons why it didnt spread more.,-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+36,The first is that there was a lot of heroic work by the health workers.,0.20000000298023224,0.20000000298023224,0.20000000298023224
+37,They found the people and they prevented more infections.,0.8999999761581421,0.8999999761581421,0.8999999761581421
+38,The second is the nature of the virus.,-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+39,Ebola does not spread through the air.,-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+40,"And by the time youre contagious, most people are so sick that theyre bedridden.",-0.800000011920929,0.800000011920929,-0.800000011920929
+41,"Third, it didnt get into many urban areas.",-0.800000011920929,0.800000011920929,-0.800000011920929
+42,And that was just luck.,-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+43,"If it had gotten into a lot more urban areas, the case numbers would have been much larger.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+44,"So next time, we might not be so lucky.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+45,You can have a virus where people feel well enough while theyre infectious that they get on a plane or they go to a market.,-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+46,"The source of the virus could be a natural epidemic like Ebola, or it could be bioterrorism.",-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+47,So there are things that would literally make things a thousand times worse.,-0.800000011920929,0.800000011920929,-0.800000011920929
+48,"In fact, lets look at a model of a virus spread through the air, like the Spanish Flu back in 1918.",-0.10000000149011612,0.10000000149011612,-0.10000000149011612
+49,"So heres what would happen: It would spread throughout the world very, very quickly.",0.20000000298023224,0.20000000298023224,0.20000000298023224
+50,And you can see over 30 million people died from that epidemic.,-0.5,0.5,-0.5
+51,So this is a serious problem.,-0.8999999761581421,0.8999999761581421,-0.8999999761581421
+52,We should be concerned.,-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+53,"But in fact, we can build a really good response system.",0.4000000059604645,0.4000000059604645,0.4000000059604645
+54,We have the benefits of all the science and technology that we talk about here.,0.5,0.5,0.5
+55,Weve got cell phones to get information from the public and get information out to them.,0.20000000298023224,0.20000000298023224,0.20000000298023224
+56,We have satellite maps where we can see where people are and where theyre moving.,0.10000000149011612,0.10000000149011612,0.10000000149011612
+57,We have advances in biology that should dramatically change the turnaround time to look at a pathogen and be able to make drugs and vaccines that fit for that pathogen.,0.0,0.0,0.0
+58,"So we can have tools, but those tools need to be put into an overall global health system.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+59,And we need preparedness.,-0.10000000149011612,0.10000000149011612,-0.10000000149011612
+60,"The best lessons, I think, on how to get prepared are again, what we do for war.",0.800000011920929,0.800000011920929,0.800000011920929
+61,"For soldiers, we have full-time, waiting to go.",0.0,0.0,0.0
+62,We have reserves that can scale us up to large numbers.,0.10000000149011612,0.10000000149011612,0.10000000149011612
+63,NATO has a mobile unit that can deploy very rapidly.,0.6000000238418579,0.6000000238418579,0.6000000238418579
+64,"NATO does a lot of war games to check, are people well trained?",0.0,0.0,0.0
+65,Do they understand about fuel and logistics and the same radio frequencies?,-0.10000000149011612,0.10000000149011612,-0.10000000149011612
+66,So they are absolutely ready to go.,0.6000000238418579,0.6000000238418579,0.6000000238418579
+67,So those are the kinds of things we need to deal with an epidemic.,-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+68,What are the key pieces?,0.0,0.0,0.0
+69,"First, we need strong health systems in poor countries.",-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+70,"Thats where mothers can give birth safely, kids can get all their vaccines.",0.699999988079071,0.699999988079071,0.699999988079071
+71,"But, also where well see the outbreak very early on.",0.0,0.0,0.0
+72,"We need a medical reserve corps: lots of people whove got the training and background who are ready to go, with the expertise.",0.30000001192092896,0.30000001192092896,0.30000001192092896
+73,And then we need to pair those medical people with the military.,-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+74,"taking advantage of the militarys ability to move fast, do logistics and secure areas.",0.10000000149011612,0.10000000149011612,0.10000000149011612
+75,"We need to do simulations, germ games, not war games, so that we see where the holes are.",-0.30000001192092896,0.30000001192092896,-0.30000001192092896
+76,"The last time a germ game was done in the United States was back in 2001, and it didnt go so well.",-0.6000000238418579,0.6000000238418579,-0.6000000238418579
+77,"So far the score is germs: 1, people: 0.",-0.20000000298023224,0.20000000298023224,-0.20000000298023224
+78,"Finally, we need lots of advanced R&amp;D in areas of vaccines and diagnostics.",0.0,0.0,0.0
+79,"There are some big breakthroughs, like the Adeno-associated virus, that could work very, very quickly.",0.20000000298023224,0.20000000298023224,0.20000000298023224
+80,"Now I dont have an exact budget for what this would cost, but Im quite sure its very modest compared to the potential harm.",0.30000001192092896,0.30000001192092896,0.30000001192092896
+81,"The World Bank estimates that if we have a worldwide flu epidemic, global wealth will go down by over three trillion dollars and wed have millions and millions of deaths.",-0.699999988079071,0.699999988079071,-0.699999988079071
+82,These investments offer significant benefits beyond just being ready for the epidemic.,0.8999999761581421,0.8999999761581421,0.8999999761581421
+83,"The primary healthcare, the R&amp;D, those things would reduce global health equity and make the world more just as well as more safe.",0.10000000149011612,0.10000000149011612,0.10000000149011612
+84,So I think this should absolutely be a priority.,0.10000000149011612,0.10000000149011612,0.10000000149011612
+85,Theres no need to panic.,0.20000000298023224,0.20000000298023224,0.20000000298023224
+86,We dont have to hoard cans of spaghetti or go down into the basement.,0.6000000238418579,0.6000000238418579,0.6000000238418579
+87,"But we need to get going, because time is not on our side.",-0.4000000059604645,0.4000000059604645,-0.4000000059604645
+88,"In fact, if theres one positive thing that can come out of the Ebola epidemic, its that it can serve as an early warning, a wake-up call, to get ready.",-0.20000000298023224,0.20000000298023224,-0.20000000298023224
+89,"If we start now, we can be ready for the next epidemic.",0.0,0.0,0.0
+90,Thank you.,0.800000011920929,0.800000011920929,0.800000011920929
+91,(Applause),0.0,0.0,0.0
