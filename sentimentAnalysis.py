@@ -44,7 +44,8 @@ def analyze(movie_review_filename):
     with open(movie_review_filename, "r") as review_file:
         # Instantiates a plain text document.
         content = review_file.read()
-
+    # Remove new lines
+    content = content.replace('\n', ' ').replace('\r', '').replace('  ', ' ')
     document = language_v1.Document(content=content, type_=language_v1.Document.Type.PLAIN_TEXT)
     annotations = client.analyze_sentiment(request={'document': document})
 
