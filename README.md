@@ -8,6 +8,7 @@ Follow this tutorial for authentification: https://cloud.google.com/natural-lang
 Make sure that you have satisfied the prerequisites mentioned above and that the GOOGLE_APPLICATION_CREDENTIALS variable shows the path to your JSON credentials.
 
 ## Usage
+Example with the 'The next outbreak? We’re not ready | Bill Gates' TED talk
 ```python
-python3 sentimentAnalysis.py path-to-file
+python3 sentimentAnalysis.py transcripts/TheNextOutbreak.txt
 ```
