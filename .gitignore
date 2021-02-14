@@ -3,7 +3,7 @@
 env
 .DS_Store
 *.csv
-*.txt
+transcript*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
