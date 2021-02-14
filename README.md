@@ -17,6 +17,14 @@ Example with the 'The next outbreak? We’re not ready | Bill Gates' TED talk
 python3 sentimentAnalysis.py "https://www.youtube.com/watch?v=6Af6b_wyiwI"
 ```
 
+## Installation
+Clone this repository, cd into it, and install the required packages with pip.
+```bash
+git clone https://github.com/titusss/Sentiment-Analysis-with-Gcloud.git
+cd Sentiment-Analysis-with-Gcloud
+pip install -r requirements.txt
+```
+
 ## Case Study
 Example infographic created with Google Spreadsheet Charts
 ![TDF_PodPlot_Export_03_MIRO](https://user-images.githubusercontent.com/26855197/107870085-7b49c700-6e4a-11eb-9e02-8f6397109019.png)
