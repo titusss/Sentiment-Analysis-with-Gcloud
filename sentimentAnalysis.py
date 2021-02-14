@@ -55,7 +55,10 @@ def downloadSubtitles(youtube_url):
     try:
         print('Downloading subtitles for: ' + youtube_url)
         source = YouTube(youtube_url)
-        en_caption = source.captions["en"]
+        try:
+            en_caption = source.captions["en"]
+        except KeyError:
+            en_caption = source.captions["a.en"]
         print("Succesfully downloaded subtitles for YouTube video: '" + source.title + "'")
         video_title = source.title.replace(" ", "_")
         caption = cleanCaption(en_caption.generate_srt_captions())
