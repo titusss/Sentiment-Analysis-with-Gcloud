@@ -1,6 +1,6 @@
 # Sentiment Analysis of YouTube videos with Gcloud NLP API
 Automatically download and analyze any YouTube video subtitles based on sentiment with Google's Natural Language API.
-Exports a CSV with score, magnitude, and overall sentiment and a transcript .txt file. Simple fork of Gclouds NLP API tutorial for Sentiment Analysis. 
+Exports a CSV with score, magnitude, and overall sentiment and a transcript .txt file. Sentence query system is a simple fork of Gclouds NLP API tutorial for Sentiment Analysis. 
 
 Made for the 'PodPlot' assignment for UC Berkeley's 'Technology Design Foundations'.
 
