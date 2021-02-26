@@ -26,5 +26,5 @@ pip install -r requirements.txt
 ```
 
 ## Case Study
-Example infographic created with Google Spreadsheet Charts
+Example infographic created with Google Spreadsheet Charts.
 ![TDF_PodPlot_Export_03_MIRO](https://user-images.githubusercontent.com/26855197/107870085-7b49c700-6e4a-11eb-9e02-8f6397109019.png)
